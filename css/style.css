@@ -35,7 +35,7 @@ ul {
     z-index: 998;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1008px) {
     #navbar:hover {
         width: 140px;
         transition: .1s;
@@ -145,7 +145,15 @@ ul {
 
 /* || Resposive mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1007px) {
+    /* For tablet: */
+    #navbar span {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
     /* For mobile phones: */
     #app {
         flex-direction: column;

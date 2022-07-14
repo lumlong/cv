@@ -1,105 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head >hold in formation about web page -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krit's CV website</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <title>Document</title>
 </head>
-
-<style>
-    table.workexp, table.workexp th, table.workexp td {
-        border-collapse: collapse;
-        border: 1px solid;
-        padding: 10px;
-    }
-
-    img#profile {
-        border-radius: 50%;
-        width: 150px;
-    }
-</style>
-
 <body>
-    <table>
-        <tr>
-            <td><img id="profile" src="https://media-exp1.licdn.com/dms/image/C4E03AQHWG9CTaPQmxQ/profile-displayphoto-shrink_400_400/0/1517022567296?e=1663200000&v=beta&t=kUnON3yg74ITmDEGGH_I-qFgMCo448j1mqeWxzFQGw4" alt="profile picture"></td>
-            <td>
-                <h1>Hello my name is Krit J</h1>
-                <p>This is a part of <strong>Web Development Bootcamp</strong></p>
-                <p><em>Web Technology Designer</em></p>
-                <p></p>
-            </td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Work Experience</h2>
-    <table class="workexp">
-        <colgroup>
-            <col>
-            <col>
-        </colgroup>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th> Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2018-2022</td>
-                <td>Product Designer at Asian Property</td>
-            </tr>
-            <tr>
-                <td>2017-2018</td>
-                <td>Digital Strategy at Ogilvy</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-
-    <h2>Skills</h2>
-    <table>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>React</td>
-                        <td>⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td>Node.js</td>
-                        <td>⭐</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td>⭐</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>My Interest</h3>
-    <ol>
-        <li>Sport: Tennis, Golf</li>
-        <li>Politicals</li>
-        <li>Science</li>
-        <li>Brewing</li>
-    </ol>
-    <hr>
-    <h3>Contact Me</h3>
-    <p>If you're looking for front end developer please <a href="contact.html">click</a> to contact me</p>
+    <div id="app">
+        <nav id="navbar" class="flex-center">
+            <ul id="navbar-mid" class="item-container flex-center">
+                <li>
+                    <a href="">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon bi bi-file-earmark-text" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                        </svg>
+                        <span>Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon bi bi-lightbulb" viewBox="0 0 16 16">
+                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                        </svg>
+                        <span>Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                        <span>Skills</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="item-container flex-bottom">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+                        <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                    </svg>
+                    <span>CV (PDF)</span>
+                </a>
+            </div>
+        </nav>
+        <div id="page">
+            <main class="snap-container">
+                <section id="about" class="content snap">About</section>
+                <section id="resume" class="content snap">Resume</section>
+                <!-- <section id="project"></section>
+                <section id="skills"></section> -->
+            </main>
+        </div>
+    </div>
 </body>
 </html>
